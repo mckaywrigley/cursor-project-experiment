@@ -189,7 +189,7 @@ Wrap layout in <ClerkProvider>
 
 ## Middleware
 
-Create a middleware.ts file at the root of the project.
+Create a middleware.ts file at the root of the project follow this example.
 
 ```ts
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
@@ -240,7 +240,7 @@ export default function LoginPage() {
 }
 ```
 
-### Sign Up Page
+## Sign Up Page
 
 The sign up page needs to go at app/(auth)/sign-up/[...sign-up]/page.tsx
 
@@ -257,3 +257,7 @@ export default function SignUpPage() {
   return <SignUp appearance={{ baseTheme: theme === "dark" ? dark : undefined }} />;
 }
 ```
+
+## Rules
+
+(auth) can only be used in server components and functions
